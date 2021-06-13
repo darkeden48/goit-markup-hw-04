@@ -213,6 +213,14 @@ cursor: pointer;
  .shadow-title-portfolio{
  color: var(--portfolio-background);
  }
+ .hero-foto{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-image: url("../images/background-hero.jpg");
+}
  .hero{
      background-color: var(--background-hero);
      color: var(--hero-color);
@@ -434,12 +442,14 @@ align-items: center;
 }
 .active{
     background-color: var(--animation-bottons);
-    color: var(--animation-button-focus); 
+    color: var(--animation-button-focus);
 }
 .button-item:hover,
 .button-item:focus{
     background-color: var(--animation-bottons);
     color: var(--animation-button-focus);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px 
+    rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* portfolio */
 .portfolio-menu{
@@ -455,6 +465,10 @@ flex-wrap: wrap;
 .portfolio-item{
 margin-right:30px;
 margin-bottom: 30px;
+}
+.portfolio-item:focus, .portfolio-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
+    rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-info{
 border-left: 1px solid var(--border-color);
