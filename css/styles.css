@@ -315,17 +315,21 @@ color: var(--text-color);
     border: 1px solid var(--icon-names-color);
     border-radius: 4px;
     padding: 16px 32px;
+    cursor: pointer;
 }
 .icon-client{
     fill: var(--icon-names-color);
 }
-
+.icon-client:hover, .icon-client:focus{
+    fill: var(--animation-bottons);
+}
 .clients .clients-icon:not(:last-child){
 margin-right: 30px;
 }
 /* section-three */
 .section-three{
-background-color: var(--background-section-three);align-items: center;
+background-color: var(--background-section-three);
+align-items: center;
 }
 .card-three{
     display: flex;
