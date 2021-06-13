@@ -171,6 +171,38 @@ margin-top: 9px;
 .info:focus, .info:hover{
     color:var(--animation-links);
 }
+.conteiner-position{
+    display: flex;
+}
+.icon-footer-info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.icon-footer{
+    display: flex;
+    align-items: center;
+}
+.icon-list-footer{
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.icon-list-footer:hover, .icon-list-footer:focus{
+background-color: var(--animation-bottons);
+cursor: pointer;
+}
+.join-place{
+    margin-top: 15px;
+    margin-left: 70px;
+    fill: var(--animatmaion-button-focus);
+}
+.icon-footer-info .icon-list-footer:not(:last-child){
+    margin-right: 10px;
+}
+.join{
+    color: var(--address);   
+}
 
  /* INDEX-MAIN */
  /* hero-section */
@@ -262,7 +294,35 @@ margin-top: 9px;
 .second-list .img:not(:last-child){
     margin-right: 30px;
 }
+/*Klients-section*/
+.clients-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clients-title{
+font-weight: bold;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+.clients{
+    display: flex;
+    margin-top: 50px;
+}
+.clients-icon{
+    border: 1px solid var(--icon-names-color);
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+.icon-client{
+    fill: var(--icon-names-color);
+}
 
+.clients .clients-icon:not(:last-child){
+margin-right: 30px;
+}
 /* section-three */
 .section-three{
 background-color: var(--background-section-three);align-items: center;
@@ -273,7 +333,6 @@ background-color: var(--background-section-three);align-items: center;
     align-items: center;
 }
 .title-three{
-    background-color: var(--border-name);
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -335,6 +394,8 @@ background-color: var(--background-section-three);align-items: center;
 }
 .icon-name{
     fill:var(--icon-names-color);
+    display: flex;
+    align-items: center;
 }
 .icon-list:hover .icon-name, .icon-list:focus .icon-name{
     fill: var(--background-color);
