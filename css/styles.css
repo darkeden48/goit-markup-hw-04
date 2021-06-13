@@ -201,7 +201,11 @@ cursor: pointer;
     margin-right: 10px;
 }
 .join{
-    color: var(--address);   
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--address); 
 }
 
  /* INDEX-MAIN */
@@ -265,6 +269,7 @@ cursor: pointer;
     padding: 25px 100px;
     margin-bottom: 30px;
     background-color: var(--icon-background);
+    border-radius: 4px;
 }
 .icon-first{
     fill:var(--text-color);
