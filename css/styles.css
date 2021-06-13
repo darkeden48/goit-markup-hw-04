@@ -182,6 +182,7 @@ margin-top: 9px;
 .icon-footer{
     display: flex;
     align-items: center;
+    fill: var(--animatmaion-button-focus);
 }
 .icon-list-footer{
     padding: 12px;
@@ -195,7 +196,6 @@ cursor: pointer;
 .join-place{
     margin-top: 15px;
     margin-left: 70px;
-    fill: var(--animatmaion-button-focus);
 }
 .icon-footer-info .icon-list-footer:not(:last-child){
     margin-right: 10px;
@@ -224,6 +224,7 @@ cursor: pointer;
     margin-right: auto;
     background-position: center;
     background-image: url("../images/background-hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4));
 }
  .hero{
      background-color: var(--background-hero);
