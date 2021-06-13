@@ -320,7 +320,7 @@ color: var(--text-color);
 .icon-client{
     fill: var(--icon-names-color);
 }
-.icon-client:hover, .icon-client:focus{
+.clients-icon:hover .icon-client, .clients-icon:focus .icon-client{
     fill: var(--animation-bottons);
 }
 .clients .clients-icon:not(:last-child){
