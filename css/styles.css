@@ -10,7 +10,7 @@
     --animation-links: #2196F3;
     --animation-bottons: #2196F3;
     --buttons-background: #F5F4FA;
-    --animatmaion-button-focus:#ffffff;
+    --animation-button-focus:#ffffff;
     --logo: #2196F3; 
     --log:#ffffff;
     --address:#ffffff;
@@ -31,7 +31,9 @@ body{
     font-weight: normal;
     color: var(--text-color);
  }
- a {text-decoration: none}
+ a {text-decoration: none;
+    
+}
  ul{list-style: none}
     h1,
     h2,
@@ -122,11 +124,12 @@ body{
         color:var(--animation-links);
         fill:var(--animation-links);
 }
-.header-contact:focus .icon-mail, .header-contact:hover .icon-mail  {
+.header-contact:focus .icon-phone, .header-contact:hover .icon-phone  {
     color:var(--animation-links);
     fill:var(--animation-links);
 }
-.header-contact:focus .icon-phone, .header-contact:hover .icon-phone  {
+.header-contact:focus .icon-mail, .header-contact:hover .icon-mail
+   {
     color:var(--animation-links);
     fill:var(--animation-links);
 }
@@ -328,14 +331,28 @@ color: var(--text-color);
 .clients-icon{
     border: 1px solid var(--icon-names-color);
     border-radius: 4px;
-    padding: 16px 32px;
     cursor: pointer;
 }
+.element-client{
+    display: flex;
+    padding: 16px 32px;
+}
+
 .icon-client{
+    display: flex;
     fill: var(--icon-names-color);
 }
-.clients-icon:hover .icon-client, .clients-icon:focus .icon-client{
+.icon-client:hover .icon-client:focus{
     fill: var(--animation-bottons);
+    background-color: black;
+}
+.clients:focus .clients-icon .clients:focus .clients-icon{
+    fill: var(--animation-bottons);
+    background-color: black;
+}
+.element-client:hover .element-client:focus{
+   fill: var(--animation-bottons);
+   background-color: black;
 }
 .clients .clients-icon:not(:last-child){
 margin-right: 30px;
@@ -344,11 +361,6 @@ margin-right: 30px;
 .section-three{
 background-color: var(--background-section-three);
 align-items: center;
-}
-.card-three{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .title-three{
     font-weight: bold;
@@ -369,8 +381,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
 
 }
 .name{
@@ -391,18 +402,23 @@ align-items: center;
 .name-info{
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 16px;
     color: var(--under-text-color);
 }
 .icon-names-info{
     display: flex;
-    margin-top: 16px;
 }
 .icon-list{
+    display: flex;
+    align-items: center;
     background-color:var(--background-color);
-    border-radius: 50%;
-    padding: 12px;
 }
-.icon-list:hover, .icon-list:focus{
+.icon-element{
+    display: flex;
+    padding: 12px;
+    border-radius: 50%;
+}
+.icon-element:hover, .icon-element:focus{
     background-color: var(--animation-bottons) ;
     fill: var(--background-color);
     cursor:pointer;
@@ -415,7 +431,7 @@ align-items: center;
     display: flex;
     align-items: center;
 }
-.icon-list:hover .icon-name, .icon-list:focus .icon-name{
+.icon-element:hover .icon-name, .icon-element:focus .icon-name{
     fill: var(--background-color);
 }
 /* PORTFOLIO-MAIN */
@@ -472,10 +488,9 @@ flex-wrap: wrap;
 margin-right:30px;
 margin-bottom: 30px;
 }
-.portfolio-item:focus, .portfolio-item:hover{
+.portfolio-element:focus, .portfolio-element:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
-    rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+    rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 .portfolio-info{
 border-left: 1px solid var(--border-color);
 border-bottom: 1px solid var(--border-color);
