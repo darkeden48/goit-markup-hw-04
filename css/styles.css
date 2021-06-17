@@ -185,14 +185,18 @@ margin-top: 9px;
 .icon-footer{
     display: flex;
     align-items: center;
-    fill: var(--animatmaion-button-focus);
+    fill: var(--animation-button-focus);
 }
 .icon-list-footer{
+    display: flex;
+    align-items: center;
+}
+.icon-footer-element{
     padding: 12px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
-.icon-list-footer:hover, .icon-list-footer:focus{
+.icon-footer-element:hover, .icon-footer-element:focus{
 background-color: var(--animation-bottons);
 cursor: pointer;
 }
@@ -327,33 +331,33 @@ color: var(--text-color);
 .clients{
     display: flex;
     margin-top: 50px;
-}
+ }
 .clients-icon{
-    border: 1px solid var(--icon-names-color);
-    border-radius: 4px;
-    cursor: pointer;
+display: flex;
 }
 .element-client{
-    display: flex;
-    padding: 16px 32px;
+ display: flex;
+ padding: 16px 32px;
+ border: 1px solid var(--icon-names-color);
+ border-radius: 4px;
+ cursor: pointer;
 }
-
 .icon-client{
     display: flex;
     fill: var(--icon-names-color);
 }
-.icon-client:hover .icon-client:focus{
+.element-client:hover,
+.element-client:focus 
+{
+    border-color: var(--animation-bottons) ;
+}
+.element-client:hover .icon-client,
+.element-client:focus .icon-client
+{
     fill: var(--animation-bottons);
-    background-color: black;
+    border-color: var(--animation-bottons) ;
 }
-.clients:focus .clients-icon .clients:focus .clients-icon{
-    fill: var(--animation-bottons);
-    background-color: black;
-}
-.element-client:hover .element-client:focus{
-   fill: var(--animation-bottons);
-   background-color: black;
-}
+
 .clients .clients-icon:not(:last-child){
 margin-right: 30px;
 }
@@ -487,6 +491,9 @@ flex-wrap: wrap;
 .portfolio-item{
 margin-right:30px;
 margin-bottom: 30px;
+}
+.portfolio-element{
+    display: block;
 }
 .portfolio-element:focus, .portfolio-element:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
