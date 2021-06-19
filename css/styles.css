@@ -58,9 +58,11 @@ body{
     padding-bottom: 94px;
 }
  /* HEADER */
+ .header{
+    border-bottom: 1px solid var(--border-color-header);
+ }
  .header-conteiner{
     display:flex;
-    border-bottom: 1px solid var(--border-color-header);
 }
  .nav{
      display:flex;
